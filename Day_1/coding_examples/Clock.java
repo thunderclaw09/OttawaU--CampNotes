@@ -2,6 +2,7 @@ class Clock
 {
     public static void main(String[] args)
     {
-        new MyFrame();
+      new MyFrame();
+      System.out.println("Frame created!");
     }
 }

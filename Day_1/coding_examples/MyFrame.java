@@ -43,10 +43,33 @@ class MyFrame extends JFrame
         dateLabel.setFont(new Font("Ink Free", Font.PLAIN, 25));
 
         this.add(timeLabel);
-        this.add(dateLabel);
+        this.add(dayLabel);
         this.add(dateLabel);
         this.setVisible(true);
 
-        setTime();
+       setTime();
     }
+
+  public void setTime()
+  {
+    while(true)
+      {
+        time = timeFormat.format(Calendar.getInstance().getTime());
+        timeLabel.setText(time);
+
+        day = dayFormat.format(Calendar.getInstance().getTime());
+        dayLabel.setText(day);
+
+        date = dateFormat.format(Calendar.getInstance().getTime());
+        dateLabel.setText(date);
+
+        try 
+          {
+            Thread.sleep(1000); //Makes the thread sleep for one second so that it doesn't keep repeating really fast.
+          }catch(InterruptedException e)
+          {
+            e.printStackTrace();
+          }
+      }
+  }
 }
