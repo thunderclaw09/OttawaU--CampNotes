@@ -1,5 +1,5 @@
 public class Data_Structures {
-    public static void myFunc(int[] nums, int target)
+    public static int myFunc(int[] nums, int target)
     {
         for (int i = 0; i < nums.length; i++)
         {
@@ -10,10 +10,14 @@ public class Data_Structures {
                     if (nums[i] + nums[j] == target)
                     {
                         System.out.println("(" + Integer.toString(i) + ", " + Integer.toString(j) + ")");
+                        return 0;
                     }
                 }
             }
         }
+
+        System.out.println("Faulty code / Faulty input");
+        return 1;
     }
 
 
