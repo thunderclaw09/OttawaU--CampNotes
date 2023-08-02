@@ -1,3 +1,4 @@
+package DataStructures;
 public class Data_Structures {
     public static int myFunc(int[] nums, int target)
     {

@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>uOttawa - Software Engineering and Computer Science Enrichment Program</h1>
+    <h2>Activity 3: Web Development</h2>
+    <p>Blah blah blah I'm a potato :D</p>
+    <p>The duck walked up to the lemonade stand...</p>
+    <br>
+    <br>
+
+    <h2>CALCULATOR :D</h2>
+
+    <table id="calculator">
+        <tr>
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td>
+                <input type="button" value="c" onclick="clr()" onkeydown="myFunction(event)">
+            </td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" onclick="display('1')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="2" onclick="display('2')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="3" onclick="display('3')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="/" onclick="display('/')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="display('4')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="5" onclick="display('5')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="6" onclick="display('6')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="*" onclick="display('*')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="display('7')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="8" onclick="display('8')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="9" onclick="display('9')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="-" onclick="display('-')" onkeydown="myFunction(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="display('0')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="." onclick="display('.')" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="=" onclick="solve()" onkeydown="myFunction(event)"></td>
+            <td><input type="button" value="+" onclick="display('+')" onkeydown="myFunction(event)"></td>
+        </tr>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
