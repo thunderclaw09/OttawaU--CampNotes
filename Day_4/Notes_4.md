@@ -151,3 +151,29 @@ If there's a wall to the left, it continues forward. If there is a wall on the l
 ## **Activity 5: Challenge - Merging Two Sorted Lists**
 
 A **LINKED LIST** is a list that has two pieces of information: the data and something that points to the next node. Each node is the same. The last node points to null. 
+
+**TEACHER'S SOLUTION**
+```c++
+class Solution
+{
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2)
+    {
+        if (list1 == nullptr) return list2;
+        if (list2 == nullptr) return list1;
+
+        if (list1->val >= list2 ->val)
+        {
+            list2->next = mergeTwoLists(list1, list2->next);
+            return list2;
+        }else
+        {
+            list1->next = mergeTwoLists(list1->next, list2);
+            return list1;
+        }
+    }
+};
+
+// this is a RECURSIVE function
+
+```
