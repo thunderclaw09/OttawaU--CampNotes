@@ -132,3 +132,15 @@ An **API** is some kind of program we use to fetch data or something like that. 
 
 *OBJECTIVE: Coding something that will grab weather information and display it in the console.*
 
+**JSON** stands for "Java Script Object Notation." 
+
+    When Python uses the json object, it treats it like a DICTIONARY. 
+<br></br>
+<br></br>
+<br></br>
+
+## **Activity 4: Turtle Maze**
+
+The way he solved it: he "put one hand on the left wall and followed it". Basically, it semms that he just folowed a specific wall. He faces the left of the turtle and follows it. 
+
+If there's a wall to the left, it continues forward. If there is a wall on the left and in front, it changes direction to the right and continues as normal. 
