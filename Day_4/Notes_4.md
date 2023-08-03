@@ -144,3 +144,10 @@ An **API** is some kind of program we use to fetch data or something like that. 
 The way he solved it: he "put one hand on the left wall and followed it". Basically, it semms that he just folowed a specific wall. He faces the left of the turtle and follows it. 
 
 If there's a wall to the left, it continues forward. If there is a wall on the left and in front, it changes direction to the right and continues as normal. 
+<br></br>
+<br></br>
+<br></br>
+
+## **Activity 5: Challenge - Merging Two Sorted Lists**
+
+A **LINKED LIST** is a list that has two pieces of information: the data and something that points to the next node. Each node is the same. The last node points to null. 
